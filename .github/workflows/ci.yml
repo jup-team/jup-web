@@ -21,11 +21,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-      run: npm install --ignore-engines
+      run: yarn install --ignore-engines
     - name: Run ESLint
       run: eslint . --ext .js,.jsx,.ts,.tsx
     - name: Test
-      run: npm test
+      run: yarn test
 
     #  - name: Build page
     #  run: npm run build
