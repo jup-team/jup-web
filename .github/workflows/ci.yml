@@ -26,6 +26,7 @@ jobs:
       with:
         extensions: "ts,tsx,js,jsx"
         extra-args: "--max-warnings=0"
+        config-path: "../../.eslintrc"
     - name: Test
       run: npm test
 
