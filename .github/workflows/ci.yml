@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-      run: npm install
+      run: npm install --ignore-engines
     - name: Run ESLint
       run: eslint . --ext .js,.jsx,.ts,.tsx
     - name: Test
