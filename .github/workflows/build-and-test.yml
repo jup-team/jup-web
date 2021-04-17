@@ -1,5 +1,8 @@
-name: Build and Deploy
+name: Build and Test
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -23,6 +26,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Deploy react app to github pages
-        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
