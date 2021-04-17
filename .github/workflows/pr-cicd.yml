@@ -1,11 +1,11 @@
-name: Build and Deploy
+name: PR CI/CD to GH Pages
 on:
   pull_request:
     branches:
       - main
 
 jobs:
-  build:
+  build-deploy-2-ghpages:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -28,6 +28,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         continue-on-error: true
         with:
-          github_token: '2wswsededdedefrgrgt'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           
