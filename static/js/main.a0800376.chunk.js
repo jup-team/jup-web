@@ -1,2 +1,0 @@
-(this["webpackJsonpjup-web"]=this["webpackJsonpjup-web"]||[]).push([[0],{9:function(e,t,n){"use strict";n.r(t);n(1);var c=n(3),s=n.n(c),r=n(0);var p=function(){return Object(r.jsx)("div",{className:"App",children:Object(r.jsx)("h1",{children:"Hello"})})};s.a.render(Object(r.jsx)(p,{}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.a0800376.chunk.js.map
