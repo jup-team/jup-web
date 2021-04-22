@@ -1,10 +1,23 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import { SignInPage, SignUpPage } from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <SignInPage />
+        </Route>
+        <Route path="/sign-up">
+          <SignUpPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
