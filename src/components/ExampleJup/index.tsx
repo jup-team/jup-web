@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 interface SampleResource {
   id: number;
@@ -10,13 +10,15 @@ interface Props {
 }
 
 interface State {
-    sampleNewResource ?: string
+  sampleNewResource?: string
 }
 
 export default class ExampleJup extends Component<Props, State> {
-  state = {
-    sampleNewResource: "",
-  };
+  ExampleJup() {
+    this.state = {
+      sampleNewResource: '',
+    };
+  }
 
   render() {
     const { sampleResources } = this.props;
@@ -24,6 +26,7 @@ export default class ExampleJup extends Component<Props, State> {
 
     return (
       <>
+        <h1>{ sampleNewResource }</h1>
         <ul>
           {sampleResources.map((r) => (
             <li>{r.name}</li>
